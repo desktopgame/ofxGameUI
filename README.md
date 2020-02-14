@@ -9,6 +9,11 @@ Introduction
 ------------
 ofxGameUI is provide ui for game.
 
+Note
+------------
+font is need a separately install.  
+in default, use a [mplus font](https://mplus-fonts.osdn.jp/about.html)
+
 License
 -------
 MIT License
