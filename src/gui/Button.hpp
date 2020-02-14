@@ -1,6 +1,6 @@
 #pragma once
-#ifndef COMMON_BUTTON_HPP
-#define COMMON_BUTTON_HPP
+#ifndef OFXGAMEUI_BUTTON_HPP
+#define OFXGAMEUI_BUTTON_HPP
 #include <ofImage.h>
 #include <ofTrueTypeFont.h>
 #include <string>
