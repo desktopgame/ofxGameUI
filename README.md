@@ -3,6 +3,8 @@ ofxGameUI
 
 ofxGameUI is provide ui for game.
 
+![sample](guimov.gif)
+
 Introduction
 ------------
 ofxGameUI is provide ui for game.
