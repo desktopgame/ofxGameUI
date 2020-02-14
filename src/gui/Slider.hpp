@@ -23,6 +23,9 @@ public:
 	GUISkin<ofxIcon::SliderStyle> fillSkin;
 	GUISkin<ofxIcon::SliderStyle> backSkin;
 	GUISkin<ofxIcon::SliderKnobStyle> knobSkin;
+
+	void setValue(float value);
+	float getValue() const;
 protected:
 	void onLoad() override;
 	void onUnload() override;

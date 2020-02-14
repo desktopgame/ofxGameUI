@@ -57,6 +57,14 @@ void Slider::mouseReleased(int x, int y, int button) {
 	this->editing = false;
 }
 
+void Slider::setValue(float value) {
+	this->value = std::max(0.0f, std::min(1.0f, value));
+}
+
+float Slider::getValue() const {
+	return value;
+}
+
 void Slider::onLoad() {
 	if (fillSkin.size != backSkin.size) {
 		throw std::logic_error("should be equal `fillSkin.size` and `backSkin.size`");
