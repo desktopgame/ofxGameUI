@@ -41,4 +41,5 @@ Version history
 ### Version 0.1 (2020/02/14):
 first release.
 
-
+### Version 0.2 (2020/02/14):
+minor fix.
