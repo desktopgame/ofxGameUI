@@ -1,6 +1,6 @@
 #pragma once
-#ifndef COMMON_CONTAINER_HPP
-#define COMMON_CONTAINER_HPP
+#ifndef OFXGAMEUI_CONTAINER_HPP
+#define OFXGAMEUI_CONTAINER_HPP
 #include "Component.hpp"
 #include <vector>
 #include <memory>

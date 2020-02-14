@@ -1,6 +1,6 @@
 #pragma once
-#ifndef COMMON_GUIUTILITY_HPP
-#define COMMON_GUIUTILITY_HPP
+#ifndef OFXGAMEUI_GUIUTILITY_HPP
+#define OFXGAMEUI_GUIUTILITY_HPP
 #include <ofRectangle.h>
 #include <ofImage.h>
 #include <glm/glm.hpp>

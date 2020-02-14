@@ -1,6 +1,6 @@
 #pragma once
-#ifndef COMMON_IMAGE_HPP
-#define COMMON_IMAGE_HPP
+#ifndef OFXGAMEUI_IMAGE_HPP
+#define OFXGAMEUI_IMAGE_HPP
 #include <ofImage.h>
 #include <string>
 #include "Component.hpp"

@@ -1,6 +1,6 @@
 #pragma once
-#ifndef COMMON_DROPDOWN_HPP
-#define COMMON_DROPDOWN_HPP
+#ifndef OFXGAMEUI_DROPDOWN_HPP
+#define OFXGAMEUI_DROPDOWN_HPP
 #include "Component.hpp"
 #include <string>
 #include <vector>

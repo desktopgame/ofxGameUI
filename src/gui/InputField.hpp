@@ -1,6 +1,6 @@
 #pragma once
-#ifndef COMMON_INPUTFIELD_HPP
-#define COMMON_INPUTFIELD_HPP
+#ifndef OFXGAMEUI_INPUTFIELD_HPP
+#define OFXGAMEUI_INPUTFIELD_HPP
 #include <ofImage.h>
 #include <ofEvents.h>
 #include <string>

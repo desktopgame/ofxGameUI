@@ -1,6 +1,6 @@
 #pragma once
-#ifndef COMMON_LABEL_HPP
-#define COMMON_LABEL_HPP
+#ifndef OFXGAMEUI_LABEL_HPP
+#define OFXGAMEUI_LABEL_HPP
 #include <ofTrueTypeFont.h>
 #include <string>
 #include <glm/glm.hpp>

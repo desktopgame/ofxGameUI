@@ -1,6 +1,6 @@
 #pragma once
-#ifndef COMMON_FONTCACHE_HPP
-#define COMMON_FONTCACHE_HPP
+#ifndef OFXGAMEUI_FONTCACHE_HPP
+#define OFXGAMEUI_FONTCACHE_HPP
 #include <ofTrueTypeFont.h>
 #include <string>
 #include <unordered_map>

@@ -1,6 +1,6 @@
 #pragma once
-#ifndef COMMON_COMPONENT_HPP
-#define COMMON_COMPONENT_HPP
+#ifndef OFXGAMEUI_COMPONENT_HPP
+#define OFXGAMEUI_COMPONENT_HPP
 #include <glm/glm.hpp>
 #include <memory>
 #include "IEventHandler.hpp"
