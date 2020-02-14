@@ -5,6 +5,7 @@
 #include <memory>
 #include "IEventHandler.hpp"
 
+namespace ofxGameUI {
 class Canvas;
 /**
  * Component.
@@ -119,4 +120,5 @@ private:
 	bool loaded;
 	Canvas* canvas;
 };
+}
 #endif

@@ -3,6 +3,7 @@
 #include <ofGraphics.h>
 #include <ofMatrixStack.h>
 
+namespace ofxGameUI {
 Button::Button() 
 	:normalImage(),
 	pressImage(),
@@ -85,4 +86,5 @@ void Button::onLoad() {
 void Button::onUnload() {
 	normalImage.clear();
 	pressImage.clear();
+}
 }

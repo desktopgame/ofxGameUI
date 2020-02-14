@@ -3,6 +3,7 @@
 #define GUI_IEVENTHANDLER_HPP
 #include <ofAppRunner.h>
 #include <memory>
+namespace ofxGameUI {
 /**
  * IEventHandler.
  */
@@ -77,4 +78,5 @@ public:
 	virtual void gotMessage(ofMessage msg) = 0;
 private:
 };
+}
 #endif

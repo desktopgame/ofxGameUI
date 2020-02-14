@@ -5,6 +5,7 @@
 #include <ofImage.h>
 #include <glm/glm.hpp>
 
+namespace ofxGameUI {
 namespace GUIUtility {
 /**
  * return true if included in range.
@@ -15,5 +16,6 @@ namespace GUIUtility {
  * @return
  */
 bool isContains(glm::ivec2 position, glm::ivec2 size, int x, int y);
+}
 }
 #endif

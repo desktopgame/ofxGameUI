@@ -5,6 +5,7 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 
+namespace ofxGameUI {
 Canvas::Canvas(glm::ivec2 solutionSize) : children(), solutionSize(solutionSize) {
 }
 
@@ -155,4 +156,5 @@ void Canvas::gotMessage(ofMessage msg) {
 	for (auto c : children) {
 		c->gotMessage(msg);
 	}
+}
 }

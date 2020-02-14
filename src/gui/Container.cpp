@@ -1,5 +1,6 @@
 #include "Container.hpp"
 #include <algorithm>
+namespace ofxGameUI {
 
 Container::Container() : children() {
 }
@@ -107,4 +108,5 @@ void Container::onUnload() {
 
 
 void Container::onLayout() {
+}
 }

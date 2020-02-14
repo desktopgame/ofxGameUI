@@ -2,6 +2,7 @@
 #include "GUIUtility.hpp"
 #include "Canvas.hpp"
 
+namespace ofxGameUI {
 Component::Component() : position(), loaded(false), canvas(nullptr) {
 }
 
@@ -116,4 +117,5 @@ void Component::dragEvent(ofDragInfo dragInfo) {
 }
 
 void Component::gotMessage(ofMessage msg) {
+}
 }

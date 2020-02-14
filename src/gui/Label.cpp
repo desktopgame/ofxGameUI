@@ -1,6 +1,7 @@
 #include "Label.hpp"
 #include <ofGraphics.h>
 
+namespace ofxGameUI {
 Label::Label() : 
 	fontColor(ofColor::black),
 	fontSize(40), 
@@ -29,5 +30,6 @@ void Label::onLoad() {
 }
 
 void Label::onUnload() {
+}
 }
 

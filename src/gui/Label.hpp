@@ -7,6 +7,7 @@
 #include "Component.hpp"
 #include "FontCache.hpp"
 #include "FontSprite.hpp"
+namespace ofxGameUI {
 /**
  * Label.
  */
@@ -28,4 +29,5 @@ private:
 	FontInstance font;
 	FontSprite fontSprite;
 };
+}
 #endif

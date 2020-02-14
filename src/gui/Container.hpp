@@ -4,6 +4,7 @@
 #include "Component.hpp"
 #include <vector>
 #include <memory>
+namespace ofxGameUI {
 /**
  * Container.
  */
@@ -36,4 +37,5 @@ protected:
 private:
 	std::vector<std::shared_ptr<Component> > children;
 };
+}
 #endif

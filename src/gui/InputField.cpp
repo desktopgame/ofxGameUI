@@ -7,6 +7,7 @@
 #include <ofAppGLFWWindow.h>
 #include <iostream>
 
+namespace ofxGameUI {
 InputField::InputField()
 	: background(),
 	focus(false), 
@@ -177,4 +178,6 @@ void InputField::keycodePressed(ofKeyEventArgs & e) {
 		buffer.pop_back();
 		this->caretPos--;
 	}
+}
+
 }

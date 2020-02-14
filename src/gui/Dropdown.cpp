@@ -3,6 +3,7 @@
 #include <algorithm>
 #include "Canvas.hpp"
 
+namespace ofxGameUI {
 Dropdown::Dropdown()
  : fontFile("mplus-1p-regular.ttf"), fontSprites(),
 	fontSize(14),
@@ -116,4 +117,6 @@ void Dropdown::onUnload() {
 FontSprite Dropdown::findFontSprite(const std::string & item) const {
 	auto iter = std::find_if(fontSprites.begin(), fontSprites.end(), [item](auto e) -> bool { return e.getText() == item; });
 	return *iter;
+}
+
 }

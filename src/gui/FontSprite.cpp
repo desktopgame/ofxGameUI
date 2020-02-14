@@ -1,6 +1,7 @@
 #include "FontSprite.hpp"
 #include <ofGraphics.h>
 
+namespace ofxGameUI {
 FontSprite::FontSprite(FontInstance font) : font(font), text(), mesh(), invalid(true) {
 }
 
@@ -46,4 +47,6 @@ void FontSprite::draw(float x, float y) {
 
 bool FontSprite::isInvalid() const {
 	return invalid;
+}
+
 }

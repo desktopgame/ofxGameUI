@@ -2,6 +2,7 @@
 #include "GUIUtility.hpp"
 #include <ofGraphics.h>
 
+namespace ofxGameUI {
 Image::Image() :image(), icon(), size(0,0), forceOverwriteSize(false) {
 }
 
@@ -24,4 +25,6 @@ void Image::onLoad() {
 
 void Image::onUnload() {
 	image.clear();
+}
+
 }

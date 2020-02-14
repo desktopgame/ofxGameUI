@@ -3,6 +3,7 @@
 #define GUI_GUISKIN_HPP
 #include <glm/glm.hpp>
 
+namespace ofxGameUI {
 /**
  * GUISkin.
  */
@@ -15,5 +16,6 @@ struct GUISkin {
 
 template<typename T>
 inline GUISkin<T>::GUISkin() : style(), size() {
+}
 }
 #endif

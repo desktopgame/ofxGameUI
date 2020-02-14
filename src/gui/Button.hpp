@@ -5,11 +5,12 @@
 #include <ofTrueTypeFont.h>
 #include <string>
 #include <functional>
+#include <ofxIcon.h>
 #include "Component.hpp"
 #include "FontCache.hpp"
 #include "FontSprite.hpp"
 #include "GUISkin.hpp"
-#include <ofxIcon.h>
+namespace ofxGameUI {
 /**
  * Button.
  */
@@ -40,4 +41,5 @@ private:
 	bool pressed;
 	int pressCount;
 };
+}
 #endif

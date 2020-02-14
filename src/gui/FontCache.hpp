@@ -7,6 +7,7 @@
 #include <memory>
 #include <vector>
 
+namespace ofxGameUI {
 using FontInstance = std::shared_ptr<ofTrueTypeFont>;
 /**
  * FontData.
@@ -38,4 +39,5 @@ private:
 	FontCache() = delete;
 	~FontCache() = delete;
 };
+}
 #endif

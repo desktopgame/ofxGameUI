@@ -4,6 +4,7 @@
 #include <ofTrueTypeFont.h>
 #include <string>
 #include "FontCache.hpp"
+namespace ofxGameUI {
 /**
  * FontSprite.
  */
@@ -61,4 +62,5 @@ private:
 	ofVboMesh mesh;
 	bool invalid;
 };
+}
 #endif

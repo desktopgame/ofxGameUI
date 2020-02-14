@@ -1,6 +1,7 @@
 #include "FontCache.hpp"
 #include <algorithm>
 
+namespace ofxGameUI {
 std::vector<FontData> FontCache::fontVec;
 
 FontInstance FontCache::load(const std::string & fontName, int fontSize) {
@@ -33,4 +34,6 @@ FontInstance FontCache::load(const std::string & fontName, int fontSize) {
 
 void FontCache::clear() {
 	FontCache::fontVec.clear();
+}
+
 }

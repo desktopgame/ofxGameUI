@@ -5,11 +5,12 @@
 #include <ofEvents.h>
 #include <string>
 #include <ofTrueTypeFont.h>
+#include <ofxIcon.h>
 #include "Component.hpp"
 #include "FontCache.hpp"
 #include "FontSprite.hpp"
 #include "GUISkin.hpp"
-#include <ofxIcon.h>
+namespace ofxGameUI {
 /**
  * InputField.
  */
@@ -57,4 +58,5 @@ private:
 	std::string buffer;
 	int caretPos;
 };
+}
 #endif

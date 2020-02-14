@@ -6,10 +6,11 @@
 #include <vector>
 #include <ofImage.h>
 #include <ofTrueTypeFont.h>
+#include <ofxIcon.h>
 #include "FontCache.hpp"
 #include "FontSprite.hpp"
 #include "GUISkin.hpp"
-#include <ofxIcon.h>
+namespace ofxGameUI {
 /**
  * Dropdown.
  */
@@ -44,4 +45,5 @@ private:
 	ofImage backgroundImage;
 	ofImage itemImage;
 };
+}
 #endif

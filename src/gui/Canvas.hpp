@@ -4,6 +4,7 @@
 #include <memory>
 #include <vector>
 #include "Component.hpp"
+namespace ofxGameUI {
 /**
  * Canvas.
  */
@@ -82,5 +83,5 @@ inline std::shared_ptr<T> Canvas::addComponent(Args ...args) {
 	addComponent(inst);
 	return inst;
 }
-
+}
 #endif

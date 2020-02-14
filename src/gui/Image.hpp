@@ -4,6 +4,7 @@
 #include <ofImage.h>
 #include <string>
 #include "Component.hpp"
+namespace ofxGameUI {
 /**
  * Image.
  */
@@ -22,4 +23,5 @@ protected:
 private:
 	ofImage image;
 };
+}
 #endif
