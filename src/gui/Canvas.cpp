@@ -7,7 +7,7 @@
 #include "GUIUtility.hpp"
 
 namespace ofxGameUI {
-Canvas::Canvas(glm::ivec2 solutionSize) : children(), solutionSize(solutionSize) {
+Canvas::Canvas(glm::ivec2 resolutionSize) : children(), resolutionSize(resolutionSize) {
 }
 
 Canvas::Canvas() : Canvas(glm::ivec2(1280,720)) {
@@ -29,18 +29,18 @@ int Canvas::getComponentCount() const {
 	return static_cast<int>(children.size());
 }
 
-void Canvas::setSolutionSize(glm::ivec2 solutionSize) {
-	this->solutionSize = solutionSize;
+void Canvas::setResolutionSize(glm::ivec2 resolutionSize) {
+	this->resolutionSize = resolutionSize;
 }
 
-glm::ivec2 Canvas::getSolutionSize() const {
-	return solutionSize;
+glm::ivec2 Canvas::getResolutionSize() const {
+	return resolutionSize;
 }
 
 glm::vec2 Canvas::getScale() const {
 	float w = static_cast<float>(ofGetWidth());
 	float h = static_cast<float>(ofGetHeight());
-	return glm::vec2(w / static_cast<float>(solutionSize.x), h / static_cast<float>(solutionSize.y));
+	return glm::vec2(w / static_cast<float>(resolutionSize.x), h / static_cast<float>(resolutionSize.y));
 }
 
 void Canvas::load() {
@@ -66,7 +66,7 @@ void Canvas::draw() {
 		return a->getDrawOrder() < b->getDrawOrder();
 	});
 	GUIUtility::enable2DViewSettings();
-	GUIUtility::push2DMatrix(solutionSize.x, solutionSize.y);
+	GUIUtility::push2DMatrix(resolutionSize.x, resolutionSize.y);
 	// ‘S‚Ä•`‰æ
 	for (auto c : children) {
 		c->draw();

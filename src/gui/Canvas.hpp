@@ -10,7 +10,7 @@ namespace ofxGameUI {
  */
 class Canvas {
 public:
-	explicit Canvas(glm::ivec2 solutionSize);
+	explicit Canvas(glm::ivec2 resolutionSize);
 	explicit Canvas();
 	~Canvas();
 
@@ -41,16 +41,16 @@ public:
 	int getComponentCount() const;
 
 	/**
-	 * overwrite solution size.
-	 * @param solutionSize
+	 * overwrite resolution size.
+	 * @param resolutionSize
 	 */
-	void setSolutionSize(glm::ivec2 solutionSize);
+	void setResolutionSize(glm::ivec2 resolutionSize);
 
 	/**
-	 * returns solution size.
+	 * returns resolution size.
 	 * @return
 	 */
-	glm::ivec2 getSolutionSize() const;
+	glm::ivec2 getResolutionSize() const;
 
 	/**
 	 * return a scale of window size for against to resolutoin.
@@ -75,7 +75,7 @@ public:
 	void gotMessage(ofMessage msg);
 private:
 	std::vector<Component::Instance> children;
-	glm::ivec2 solutionSize;
+	glm::ivec2 resolutionSize;
 };
 template<typename T, typename ...Args>
 inline std::shared_ptr<T> Canvas::addComponent(Args ...args) {
