@@ -65,17 +65,14 @@ void Canvas::draw() {
 	std::sort(children.begin(), children.end(), [](auto a, auto b) -> bool {
 		return a->getDrawOrder() < b->getDrawOrder();
 	});
-	ofSetOrientation(OF_ORIENTATION_DEFAULT, false);
-	ofEnableAlphaBlending();
-	glDisable(GL_DEPTH_TEST);
-	glDisable(GL_CULL_FACE);
+	GUIUtility::enable2DViewSettings();
 	GUIUtility::push2DMatrix(solutionSize.x, solutionSize.y);
 	// ‘S‚Ä•`‰æ
 	for (auto c : children) {
 		c->draw();
 	}
 	GUIUtility::pop2DMatrix();
-	
+	GUIUtility::disable2DViewSettings();
 }
 
 void Canvas::keyPressed(int key) {

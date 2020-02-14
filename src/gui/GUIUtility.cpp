@@ -1,6 +1,7 @@
 #include "GUIUtility.hpp"
 #include <ofMatrixStack.h>
 #include <ofGraphics.h>
+#include <ofAppRunner.h>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/glm.hpp>
 
@@ -26,5 +27,17 @@ void GUIUtility::pop2DMatrix() {
 
 	ofSetMatrixMode(ofMatrixMode::OF_MATRIX_MODELVIEW);
 	ofPopMatrix();
+}
+void GUIUtility::enable2DViewSettings() {
+	ofSetOrientation(OF_ORIENTATION_DEFAULT, false);
+	ofEnableAlphaBlending();
+	glDisable(GL_DEPTH_TEST);
+	glDisable(GL_CULL_FACE);
+}
+void GUIUtility::disable2DViewSettings() {
+	ofSetOrientation(OF_ORIENTATION_DEFAULT, true);
+	ofEnableAlphaBlending();
+	glEnable(GL_DEPTH_TEST);
+	glEnable(GL_CULL_FACE);
 }
 }

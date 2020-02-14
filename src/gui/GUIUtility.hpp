@@ -28,6 +28,19 @@ void push2DMatrix(int width, int height);
  * pop matrix.
  */
 void pop2DMatrix();
+
+struct ViewSettings {
+
+};
+/**
+ * enable 2d view settings.
+ */
+void enable2DViewSettings();
+
+/**
+ * disable 2d view settings.
+ */
+void disable2DViewSettings();
 }
 }
 #endif
