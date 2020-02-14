@@ -9,4 +9,5 @@
 #include "gui/InputField.hpp"
 #include "gui/Label.hpp"
 #include "gui/Image.hpp"
+#include "gui/GUIUtility.hpp"
 #endif
