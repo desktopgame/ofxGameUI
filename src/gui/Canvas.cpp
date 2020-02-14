@@ -4,6 +4,7 @@
 #include <ofAppRunner.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
+#include "GUIUtility.hpp"
 
 namespace ofxGameUI {
 Canvas::Canvas(glm::ivec2 solutionSize) : children(), solutionSize(solutionSize) {
@@ -68,28 +69,13 @@ void Canvas::draw() {
 	ofEnableAlphaBlending();
 	glDisable(GL_DEPTH_TEST);
 	glDisable(GL_CULL_FACE);
-	glm::mat4 proj = glm::ortho(0.0f, static_cast<float>(solutionSize.x), static_cast<float>(solutionSize.y), 0.0f, -1.0f, 1.0f);
-
-	// ‰æ–Ê”ä—¦‚ðÝ’è‚·‚é
-	ofSetMatrixMode(ofMatrixMode::OF_MATRIX_PROJECTION);
-	ofPushMatrix();
-	ofLoadIdentityMatrix();
-	ofLoadMatrix(proj);
-
-	ofSetMatrixMode(ofMatrixMode::OF_MATRIX_MODELVIEW);
-	ofPushMatrix();
-	ofLoadIdentityMatrix();
-
+	GUIUtility::push2DMatrix(solutionSize.x, solutionSize.y);
 	// ‘S‚Ä•`‰æ
 	for (auto c : children) {
 		c->draw();
 	}
-	// ‚à‚Æ‚É–ß‚·
-	ofSetMatrixMode(ofMatrixMode::OF_MATRIX_PROJECTION);
-	ofPopMatrix();
-
-	ofSetMatrixMode(ofMatrixMode::OF_MATRIX_MODELVIEW);
-	ofPopMatrix();
+	GUIUtility::pop2DMatrix();
+	
 }
 
 void Canvas::keyPressed(int key) {
