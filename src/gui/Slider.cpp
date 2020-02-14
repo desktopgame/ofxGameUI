@@ -6,6 +6,7 @@ Slider::Slider()
  : fillSkin(), 
    backSkin(),
    knobSkin(),
+   editing(false),
    value(0.0f),
    fillImage(),
    backImage(),
@@ -32,6 +33,30 @@ glm::vec3 Slider::getSize() const {
 	return glm::vec3(fillSkin.size, 0);
 }
 
+void Slider::mouseDragged(int x, int y, int button) {
+	if (button != 0 || !editing) {
+		return;
+	}
+	editValueFromX(x);
+}
+
+void Slider::mousePressed(int x, int y, int button) {
+	if (button != 0) {
+		return;
+	}
+	if (!editing && this->isContains(x, y)) {
+		this->editing = true;
+		editValueFromX(x);
+	}
+}
+
+void Slider::mouseReleased(int x, int y, int button) {
+	if (button != 0) {
+		return;
+	}
+	this->editing = false;
+}
+
 void Slider::onLoad() {
 	if (fillSkin.size != backSkin.size) {
 		throw std::logic_error("should be equal `fillSkin.size` and `backSkin.size`");
@@ -53,5 +78,11 @@ void Slider::onLoad() {
 	knobImage.mirror(true, false);
 }
 void Slider::onUnload() {
+}
+
+void Slider::editValueFromX(int posX) {
+	posX -= position.x;
+	this->value = static_cast<float>(posX) / static_cast<float>(fillImage.getWidth());
+	this->value = std::max(0.0f, std::min(1.0f, this->value));
 }
 }
