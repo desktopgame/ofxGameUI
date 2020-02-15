@@ -35,7 +35,7 @@ void Dropdown::draw() {
 	//—v‘f‚ð•\Ž¦‚·‚é
 	glm::vec3 curPos = position;
 	curPos.y += backgroundImage.getHeight();
-	for (int i = 0; i < items.size(); i++) {
+	for (int i = 0; i < static_cast<int>(items.size()); i++) {
 		if (i == selectedIndex) continue;
 		str = items.at(i);
 		strW = font->stringWidth(str);
@@ -71,7 +71,7 @@ void Dropdown::mousePressed(int x, int y, int button) {
 		int imgH = static_cast<int>(static_cast<float>(backgroundImage.getHeight()) * scale.y);
 		glm::vec3 curPos = position * scale;
 		curPos.y += backgroundImage.getHeight();
-		for (int i = 0; i < items.size(); i++) {
+		for (int i = 0; i < static_cast<int>(items.size()); i++) {
 			if (i == selectedIndex) continue;
 			bool selected = x > curPos.x && x < curPos.x + imgW && y > curPos.y && y < curPos.y + imgH;
 			if (selected) {
