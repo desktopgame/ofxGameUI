@@ -82,7 +82,7 @@ void InputField::keyPressed(int key) {
 		}
 	}
 	else if (key == ofKey::OF_KEY_RIGHT) {
-		if (caretPos < buffer.size()) {
+		if (caretPos < static_cast<int>(buffer.size())) {
 			caretPos++;
 		}
 	}
@@ -165,7 +165,7 @@ void InputField::keycodePressed(ofKeyEventArgs & e) {
 		key = static_cast<char>(start + diff);
 	}
 	if (isAlpha || isDigit || (key == '@') || (key == '-')) {
-		if (caretPos >= buffer.size()) {
+		if (caretPos >= static_cast<int>(buffer.size())) {
 			buffer.push_back(key);
 		} else {
 			buffer.insert(buffer.begin() + caretPos, key);
