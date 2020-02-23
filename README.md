@@ -4,6 +4,8 @@ ofxGameUI
 ofxGameUI is provide ui for game.
 
 ![sample](guimov.gif)
+![sample](guimov2.gif)
+![sample](guimov3.gif)
 
 Introduction
 ------------
@@ -43,3 +45,6 @@ first release.
 
 ### Version 0.2 (2020/02/14):
 minor fix.
+
+### Version 1.1 (2020/02/23):
+added support for slider

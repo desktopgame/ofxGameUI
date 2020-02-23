@@ -4,6 +4,8 @@ ofxGameUI
 ofxGameUIはゲーム用のUIを提供します。
 
 ![sample](guimov.gif)
+![sample](guimov2.gif)
+![sample](guimov3.gif)
 
 Introduction
 ------------
@@ -44,3 +46,5 @@ Version history
 ### Version 0.2 (2020/02/14):
 軽微な修正
 
+### Version 1.1 (2020/02/23):
+スライダーに対応
