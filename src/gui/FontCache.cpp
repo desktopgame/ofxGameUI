@@ -36,4 +36,7 @@ void FontCache::clear() {
 	FontCache::fontVec.clear();
 }
 
+FontData::FontData() : instance(nullptr), fontName(), fontSize(0) {
+}
+
 }

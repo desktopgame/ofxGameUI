@@ -13,6 +13,7 @@ using FontInstance = std::shared_ptr<ofTrueTypeFont>;
  * FontData.
  */
 struct FontData {
+	explicit FontData();
 	FontInstance instance;
 	std::string fontName;
 	int fontSize;
